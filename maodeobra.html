@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LucroRural - Mão de Obra e Produção</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="calculadora.css">
+    <link rel="icon" type="image/x-icon" href="Captura-de-tela-2026-06-11-192936.ico">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo-container">
+            <div class="logo-icon">LR</div>
+            <div>LucroRural</div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html"><i class="fa-solid fa-house"></i> Início</a></li>
+                <li><a href="calculadora.html" class="active"><i class="fa-solid fa-calculator"></i> Calculadora</a>
+                </li>
+                <li><a href="relatorios.html"><i class="fa-solid fa-chart-line"></i> Relatórios</a></li>
+                <li><a href="conhecimento.html"><i class="fa-solid fa-book-open"></i> Conhecimento</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <div class="page-header">
+            <h1>Calculadora de Lucro</h1>
+            <p>Preencha os dados da sua safra para calcular o lucro estimado</p>
+        </div>
+
+        <section class="card summary-card">
+            <div class="summary-grid">
+                <div>
+                    <p class="label">Custo total</p>
+                    <p class="value">R$ 0,00</p>
+                </div>
+                <div>
+                    <p class="label">Receita Bruta</p>
+                    <p class="value">R$ 0,00</p>
+                </div>
+                <div>
+                    <p class="label">Lucro Líquido</p>
+                    <p class="value highlight">+R$ 0,00</p>
+                </div>
+            </div>
+
+            <hr class="divider">
+
+            <div class="break-even">
+                <p class="label">Ponto de equilíbrio</p>
+                <p class="value-small"><strong>0 sacas /kg</strong></p>
+                <p class="hint-text">Você precisa produzir pelo menos essa quantidade para não ter prejuízo.</p>
+            </div>
+        </section>
+
+        <nav class="tabs">
+            <a href="calculadora.html" class="tab"><i class="fa-solid fa-seedling"></i> Insumos</a>
+            <a href="operacao.html" class="tab"><i class="fa-solid fa-tractor"></i> Operação</a>
+            <a href="maodeobra.html" class="tab active-tab"><i class="fa-solid fa-users"></i> Mão de obra e produção</a>
+        </nav>
+
+        <section class="card form-card">
+            <div class="form-header">
+                <div class="icon-circle small-icon"><i class="fa-solid fa-users"></i></div>
+                <h2>Mão de Obra e Produção</h2>
+            </div>
+
+            <form class="form-grid">
+                <div class="input-group">
+                    <label for="mao-de-obra">Mão de Obra (R$)</label>
+                    <div class="input-wrapper">
+                        <span class="prefix">R$</span>
+                        <input type="number" id="mao-de-obra" placeholder="0">
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <label for="producao-estimada">Produção Estimada (sacas/kg)</label>
+                    <input type="number" id="producao-estimada" placeholder="0">
+                </div>
+
+                <div class="input-group">
+                    <label for="preco-saca">Preço por Saca/Kg (R$)</label>
+                    <div class="input-wrapper">
+                        <span class="prefix">R$</span>
+                        <input type="number" id="preco-saca" placeholder="0">
+                    </div>
+                </div>
+            </form>
+        </section>
+
+
+        <div class="btn-group">
+            <a href="operacao.html" class="btn btn-white-btn"><i class="fa-solid fa-arrow-left"></i> Voltar</a>
+            <a href="relatorios.html" class="btn btn-green">Salvar simulação</a>
+        </div>
+    </main>
+
+</body>
+
+</html>
